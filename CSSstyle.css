@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Aileron';
+    src: url('aileron.heavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brittany';
+    src: url('BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dad7cd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.parallax {
+  background-image: url("nurin shawl.jpg");
+  font-family: Aileron;
+  text-align: center;
+  color: #b87a8a;
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 30;
+  padding-top: 60px;
+}
+h1 {
+  font-weight: 9000;
+  font-size: 160px;
+  text-shadow: 8px 11px 49px #333;
+}
+
+p {
+  font-family: Poppins;
+  font-size: 18px;
+  max-width: 70ch;
+  line-height: 1.5;
+  padding: 1em;
+  text-align: justify;
+}
+
+.container  {
+  position: fixed;
+  top: 0; /* Ensure it is at the top */
+  left: 0;
+  width: 100%; /* Make the navbar full width */
+  z-index: 1000;
+}
+
+/* The navbar */
+.navigations {
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navigations li{
+    display: inline;
+}
+
+/* Navbar links */
+.navigations li a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0;
+}
+
+.navigations a:hover {
+  background-color: #dad7cd;
+  color: black;
+}
+
+.aboutme {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adjust gap between text and image */
+}
+
+.text {
+    max-width: 90ch;
+}
+
+.image {
+    max-width: 40%;
+    margin-top: -55px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.font1 {
+  font-family: Brittany;
+  color: #b87a8a;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  position: relative;  /* Ensure it is positioned */
+  z-index: 2;  /* Ensure it is above font2 */
+}
+
+.font2 {
+  font-family: Aileron;
+  color: #000;
+  font-size: 50px;
+  position: relative;
+  z-index: 1;
+  margin-top: -60px;
+}
+
+.buttons {
+    margin-top: auto; /* Pushes the buttons to the bottom of the page */
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Adjust the gap between buttons */
+}
+
+.button {
+    background-color: #b87a8a;
+    border: none;
+    color: #dad7cd;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a {
+    color: #dad7cd;
+    text-decoration: none;
+}
+.hobbies {
+    background-image: url("2.jpg");
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: left;
+    padding-top: 60px;
+}
+
+.hobbies .font1{
+    color: #dad7cd;
+}
+
+.hobbies .sentence {
+    max-width: 50ch;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5cm; /* 0.5cm gap between circles */
+    max-width: calc(3 * 100px + 2 * 0.5cm); /* Width of 3 circles and 2 gaps */
+    margin: auto;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #b87a8a;
+    color: #dad7cd;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+

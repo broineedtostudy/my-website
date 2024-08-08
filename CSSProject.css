@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'Aileron';
+    src: url('aileron.heavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brittany';
+    src: url('BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dad7cd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.font1{
+    font-family: Brittany;
+    color: #b87a8a;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;  /* Ensure it is positioned */
+    z-index: 2;
+}
+
+.font2 {
+  font-family: Aileron;
+  color: #000000;
+  font-size: 50px;
+  position: relative;
+  z-index: 1;
+  margin-top: -60px;
+}
+
+p {
+  font-family: Poppins;
+  font-size: 18px;
+  max-width: 70ch;
+  line-height: 1.5;
+  padding: 1em;
+  text-align: justify;
+}
+
+.header .font1 {
+  font-family: Brittany;
+  color: #b87a8a;
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  position: relative;  /* Ensure it is positioned */
+  z-index: 2;  /* Ensure it is above font2 */
+  text-align: center;
+}
+
+.header .font2 {
+  font-family: Aileron;
+  color: #000;
+  font-size: 100px;
+  position: relative;
+  z-index: 1;
+  margin-top: -127px;
+  text-align: center;
+}
+
+.project1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.project1 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adjust gap between text and image */
+}
+
+.project1 .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    max-width: 70ch;
+    line-height: 1.5;
+    padding: 1em;
+    text-align: justify;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+}
+
+.image-column img {
+    max-width: 100%;
+    flex-shrink: 0; /* Prevent image from shrinking */
+    margin-bottom: 0.5cm; /* Add gap between images */
+}
+
+.sign1, .sign2, .sign3, .sign4 {
+    margin-top: 0; /* Remove previous margin adjustments */
+}
+
+.project2 {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0px;
+}
+.project2 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adjust gap between text and image */
+}
+
+.project2 .text {
+    max-width: 90ch;
+}
+
+.project2 .image {
+    max-width: 40%;
+    margin-top: -55px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.project3 {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0px;
+}
+.project3 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adjust gap between text and image */
+}
+
+.project3 .text {
+    max-width: 90ch;
+}
+
+.project3 .image {
+    max-width: 40%;
+    margin-top: -55px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.project4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.project4 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adjust gap between text and image */
+}
+
+.project4 .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    max-width: 70ch;
+    line-height: 1.5;
+    padding: 1em;
+    text-align: justify;
+}
+
+.idp1, .idp2 {
+    margin-top: 0; /* Remove previous margin adjustments */
+}
+
+.project4 .image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+}
+
+.project5 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.project5 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adjust gap between text and image */
+}
+
+.project5 .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    max-width: 70ch;
+    line-height: 1.5;
+    padding: 1em;
+    text-align: justify;
+}
+
+.rb1, .rb2, .rb3, .rb4 {
+    margin-top: 0; /* Remove previous margin adjustments */
+}
+
+.project6 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.project6 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adjust gap between text and image */
+}
+
+.project6 .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    max-width: 70ch;
+    line-height: 1.5;
+    padding: 1em;
+    text-align: justify;
+}
+
+.rbm1, .rbm2, .rbm3, .rbm4 {
+    margin-top: 0; /* Remove previous margin adjustments */
+}
+
+.buttons {
+    margin-top: auto; /* Pushes the buttons to the bottom of the page */
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Adjust the gap between buttons */
+}
+
+.button {
+    background-color: #b87a8a;
+    border: none;
+    color: #dad7cd;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Poppins;
+}
+
+a {
+    color: #dad7cd;
+    text-decoration: none;
+}
+

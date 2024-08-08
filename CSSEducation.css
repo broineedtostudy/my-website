@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'Aileron';
+    src: url('aileron.heavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brittany';
+    src: url('BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dad7cd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header .font1 {
+  font-family: Brittany;
+  color: #b87a8a;
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  position: relative;  /* Ensure it is positioned */
+  z-index: 2;  /* Ensure it is above font2 */
+  text-align: center;
+}
+
+.header .font2 {
+  font-family: Aileron;
+  color: #000;
+  font-size: 100px;
+  position: relative;
+  z-index: 1;
+  margin-top: -127px;
+  text-align: center;
+}
+
+.font1{
+    font-family: Brittany;
+    color: #b87a8a;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;  /* Ensure it is positioned */
+    z-index: 2;
+}
+
+.font2 {
+  font-family: Aileron;
+  color: #dad7cd;
+  font-size: 50px;
+  position: relative;
+  z-index: 1;
+  margin-top: -60px;
+}
+
+p {
+  font-family: Poppins;
+  font-size: 18px;
+  max-width: 70ch;
+  line-height: 1.5;
+  padding: 1em;
+  text-align: justify;
+}
+
+.smkkj {
+    background-image: url("kejo bw.jpg");
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: left;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.smkkj .font1{
+    margin-top: -55px;
+}
+
+.smkkj .font2{
+    color: #000;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Adjust gap between logo and text */
+}
+
+.logokejo {
+    max-width: 30ch; /* Adjust size as needed */
+    flex-shrink: 0; /* Prevent logo from shrinking */
+    position: relative;
+    left: -200px;
+}
+
+.text {
+    max-width: 80ch;
+    color: #dad7cd;
+    background-color: #b87a8a;
+    padding: 10px; /* Add padding for better readability */
+    margin: 0;
+}
+
+.split-section {
+    display: flex;
+    width: 100%;
+    height: 75vh; /* Adjust height as needed */
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-section {
+    background-color: #dad7cd;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.header-section .font1{
+    font-family: Brittany;
+    color: #b87a8a;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;  /* Ensure it is positioned */
+    z-index: 2;
+    margin-top: -55px;
+}
+
+.header-section .font2{
+    font-family: Aileron;
+    font-size: 50px;
+    position: relative;
+    z-index: 1;
+    margin-top: -60px;
+    color: black;
+}
+
+.header-section p {
+    margin: 0;
+    padding: 10px 0; /* Adjust spacing between elements */
+    text-align: left;
+}
+
+.text-section {
+    background-color: #dad7cd;
+    color: #000000;
+}
+
+.image-section {
+    background-color: #dad7cd;
+}
+
+.cfs {
+    border: 5px solid #b87a8a;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logocfs {
+    max-width: 100%;
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+
+.iium {
+    background-image: url("iium bw.jpg");
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: first;
+    justify-content: left;
+    max-width: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+
+.contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adjust gap between text and image */
+}
+
+.texts {
+    max-width: 90ch;
+    background-color: #b87a8a;
+    color: #dad7cd;
+}
+
+.logoiium {
+    max-width: 19%;
+    margin-top: -5px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+    position: relative;
+    left: -100px;
+}
+
+.buttons {
+    margin-top: auto; /* Pushes the buttons to the bottom of the page */
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Adjust the gap between buttons */
+}
+
+.button {
+    background-color: #b87a8a;
+    border: none;
+    color: #dad7cd;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Poppins;
+}
+
+a {
+    color: #dad7cd;
+    text-decoration: none;
+}
+
